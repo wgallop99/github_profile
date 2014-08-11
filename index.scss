@@ -1,0 +1,518 @@
+$lightblue: rgb(94, 165, 219);
+$font-family: Helvetica;
+
+
+body {
+  margin: 0;
+
+}
+header {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(246, 246, 246);
+  display: block;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+
+  .header_cont {
+    margin: 0px 120px;
+
+  input {
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    width: 168px;
+    height: 28px;
+    font-size: 12px;
+    font-family: helvetica;
+  }
+
+  #one {
+    margin-right: 30px;
+    width: 25px;
+  }
+
+  span {
+    color: black;
+  }
+
+  span:hover {
+    color: rgb(65, 131, 196);
+  }
+
+  #two {
+    margin-right: 30px;
+    color: #e5e5e5;
+  }
+
+  #two:hover {
+    color: #b9b9b9;
+  }
+
+
+  a {
+    color: black;
+    font-size: 13px;
+  }
+
+  a:hover {
+    color: rgb(65, 131, 196);
+  }
+
+  ul {
+    display: inline-block;
+    padding-left: 16px;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+
+    a {
+      text-decoration: none;
+      font-family: helvetica;
+      font-weight: bold;
+      color: black;
+    }
+
+    a:hover {
+      color: rgb(65, 131, 196);
+    }
+  }
+}
+
+  input {
+    display: inline-block;
+  }
+
+  .right_nav {
+    float: right;
+
+    li {
+      vertical-align: middle;
+    }
+  }
+
+  .right_nav li a img {
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+  }
+}
+}
+
+
+
+
+span {
+  display: inline-block;
+  color: grey;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: $font-family;
+
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: $lightblue;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+h3 {
+  margin-top: 0px;
+  color: grey;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.container {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+
+}
+.profile_container {
+  display: inline-block;
+  padding: 0px 10px;
+  float: left;
+  width: 25%;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: $lightblue;
+  }
+
+}
+
+#prof_pic {
+  border-radius: 6px;
+  width: 230px;
+  height: 230px;
+
+}
+
+.icons {
+  border-top: 1px solid #eee;
+  margin: 0;
+  padding-left: 0px;
+
+  .space {
+    display: inline-block;
+
+  }
+
+  .space div {
+    display: block;
+    margin-top: 8px;
+    color: #ccc;
+  }
+  ul {
+    display: inline-block;
+    padding-left: 10px;
+
+    li {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    li:nth-child(3) a{
+      color: $lightblue;
+    }
+
+    li:nth-child(3):hover a {
+      text-decoration: underline;
+    }
+
+}
+
+}
+
+.prof_box{
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  a{
+    font-size: 28px;
+    font-weight: bold;
+
+  }
+
+  a:hover {
+    color: rgb(65, 131, 196);
+  }
+
+  p {
+    display: block;
+    font-size: 11px;
+    color: grey;
+    margin: 1px;
+    font-weight: normal;
+  }
+}
+
+.prof_info2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    font-size: 2em;
+    padding: 10px;
+  }
+
+}
+
+.main_container {
+  display: inline-block;
+  width: 72%;
+  margin-bottom: 50px;
+
+}
+
+nav {
+  border-bottom: 1px solid #eee;
+
+  ul {
+    padding-left: 10px;
+    margin: 0px;
+
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      padding: 10px 10px 5px 10px;
+
+      a {
+        color: #666;
+        font-size: 18px;
+        text-decoration: none;
+
+        span {
+          color: #666;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+}
+
+#repo_list {
+  padding: 10px;
+
+  a {
+    text-decoration: none;
+    color: rgb(65, 131, 196);
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+}
+
+.eachRepo {
+  border-top: 1px solid #eee;
+
+}
+
+span {
+  color: #bbbbbb;
+}
+
+#repo_list {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 9px;
+  margin-bottom: 19px;
+  margin-top: 0px;
+
+  li:nth-child(2) {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  li:nth-child(3) {
+    color: grey;
+    font-size: 11px;
+  }
+}
+
+#repo_nav{
+  padding: 0px;
+
+  li {
+  display: inline-block;
+  vertical-align: middle;
+
+    input {
+      width: 260px;
+      height: 34px;
+      font-size: 13px;
+      border-radius: 3px;
+    }
+
+    button {
+      height: 34px;
+      font-weight: bold;
+      font-family: helvetica;
+    }
+
+    a {
+      text-decoration:  none;
+      font-family: $font-family;
+      color: rgb(65, 131, 196);
+      font-size: 14px;
+      margin-right: 5px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.repo_side{
+
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+
+  p, span a {
+   font-size: 11px;
+   display: inline-block;
+   color: grey;
+   margin-left: 10px;
+   font-weight: bold;
+ }
+
+ span a:hover {
+   color: $lightblue;
+   text-decoration: none;
+ }
+}
+
+#events {
+  display: none;
+}
+
+
+
+footer {
+  border-top: 1px solid #eee;
+  margin-right: 60px;
+  margin-left: 60px;
+  padding: 25px 0px;
+
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 12px;
+    color: grey;
+    padding-left: 10px;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: $lightblue;
+    font-size: 12px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+#githublink {
+  margin-left: 180px;
+}
+
+  span {
+    color: #bbbbbb;
+    font-size: 24;
+  }
+
+  span:hover {
+    color: grey;
+  }
+
+  #right {
+    float: right;
+  }
+}
+
+.each_Push{
+  border-top: 1px solid #eee;
+
+  span {
+    vertical-align: top;
+    margin-top: 25px;
+  }
+
+  .push_class {
+    display: inline-block;
+    margin: 15px 10px;
+
+    .push_class:first-child {
+      font-weight: normal;
+    }
+
+    img {
+      margin-left: 5px;
+    }
+
+    #date {
+      font-size: 10px;
+      color: grey;
+    }
+
+    p {
+      font-family: helvetica;
+      margin: 5px;
+      font-weight: bold;
+
+      a {
+        color: rgb(65, 131, 196);
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      display: inline-block;
+      margin: 0px;
+      padding: 0px;
+      vertical-align: top;
+
+      li {
+        display: inline-block;
+
+        img {
+          border-radius: 3px;
+        }
+
+        a {
+          text-decoration: none;
+          color: rgb(65, 131, 196);
+          vertical-align: top;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+
+      li:nth-child(3) {
+        color: grey;
+        font-size: 13px;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+.repo_event {
+  border-top: 1px solid #eee;
+
+  p {
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 13px;
+    color: grey;
+  }
+
+  span {
+    margin-left: 11px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(65, 131, 196);
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

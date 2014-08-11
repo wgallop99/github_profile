@@ -1,0 +1,329 @@
+body {
+  margin: 0; }
+
+header {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  display: block;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #e5e5e5; }
+  header .header_cont {
+    margin: 0px 120px; }
+    header .header_cont input {
+      border-radius: 4px;
+      border: 1px solid #e5e5e5;
+      width: 168px;
+      height: 28px;
+      font-size: 12px;
+      font-family: helvetica; }
+    header .header_cont #one {
+      margin-right: 30px;
+      width: 25px; }
+    header .header_cont span {
+      color: black; }
+    header .header_cont span:hover {
+      color: #4183c4; }
+    header .header_cont #two {
+      margin-right: 30px;
+      color: #e5e5e5; }
+    header .header_cont #two:hover {
+      color: #b9b9b9; }
+    header .header_cont a {
+      color: black;
+      font-size: 13px; }
+    header .header_cont a:hover {
+      color: #4183c4; }
+    header .header_cont ul {
+      display: inline-block;
+      padding-left: 16px; }
+      header .header_cont ul li {
+        display: inline-block;
+        margin-right: 10px; }
+        header .header_cont ul li a {
+          text-decoration: none;
+          font-family: helvetica;
+          font-weight: bold;
+          color: black; }
+        header .header_cont ul li a:hover {
+          color: #4183c4; }
+    header .header_cont input {
+      display: inline-block; }
+    header .header_cont .right_nav {
+      float: right; }
+      header .header_cont .right_nav li {
+        vertical-align: middle; }
+    header .header_cont .right_nav li a img {
+      height: 20px;
+      width: 20px;
+      border-radius: 4px; }
+
+span {
+  display: inline-block;
+  color: grey; }
+
+li {
+  list-style-type: none; }
+
+body {
+  font-family: Helvetica; }
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+h2 {
+  color: #5ea5db;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 7px; }
+
+h3 {
+  margin-top: 0px;
+  color: grey;
+  font-style: normal;
+  font-weight: 300; }
+
+.container {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px; }
+
+.profile_container {
+  display: inline-block;
+  padding: 0px 10px;
+  float: left;
+  width: 25%; }
+  .profile_container a {
+    text-decoration: none;
+    color: black; }
+  .profile_container a:hover {
+    color: #5ea5db; }
+
+#prof_pic {
+  border-radius: 6px;
+  width: 230px;
+  height: 230px; }
+
+.icons {
+  border-top: 1px solid #eee;
+  margin: 0;
+  padding-left: 0px; }
+  .icons .space {
+    display: inline-block; }
+  .icons .space div {
+    display: block;
+    margin-top: 8px;
+    color: #ccc; }
+  .icons ul {
+    display: inline-block;
+    padding-left: 10px; }
+    .icons ul li {
+      font-size: 14px;
+      margin-top: 8px; }
+    .icons ul li:nth-child(3) a {
+      color: #5ea5db; }
+    .icons ul li:nth-child(3):hover a {
+      text-decoration: underline; }
+
+.prof_box {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+  .prof_box a {
+    font-size: 28px;
+    font-weight: bold; }
+  .prof_box a:hover {
+    color: #4183c4; }
+  .prof_box p {
+    display: block;
+    font-size: 11px;
+    color: grey;
+    margin: 1px;
+    font-weight: normal; }
+
+.prof_info2 {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .prof_info2 li {
+    display: inline-block;
+    font-size: 2em;
+    padding: 10px; }
+
+.main_container {
+  display: inline-block;
+  width: 72%;
+  margin-bottom: 50px; }
+
+nav {
+  border-bottom: 1px solid #eee; }
+  nav ul {
+    padding-left: 10px;
+    margin: 0px; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 30px;
+      padding: 10px 10px 5px 10px; }
+      nav ul li a {
+        color: #666;
+        font-size: 18px;
+        text-decoration: none; }
+        nav ul li a span {
+          color: #666;
+          margin-right: 3px; }
+
+#repo_list {
+  padding: 10px; }
+  #repo_list a {
+    text-decoration: none;
+    color: #4183c4; }
+  #repo_list a:hover {
+    text-decoration: underline; }
+
+.eachRepo {
+  border-top: 1px solid #eee; }
+
+span {
+  color: #bbbbbb; }
+
+#repo_list {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 9px;
+  margin-bottom: 19px;
+  margin-top: 0px; }
+  #repo_list li:nth-child(2) {
+    font-size: 13px;
+    margin-bottom: 5px; }
+  #repo_list li:nth-child(3) {
+    color: grey;
+    font-size: 11px; }
+
+#repo_nav {
+  padding: 0px; }
+  #repo_nav li {
+    display: inline-block;
+    vertical-align: middle; }
+    #repo_nav li input {
+      width: 260px;
+      height: 34px;
+      font-size: 13px;
+      border-radius: 3px; }
+    #repo_nav li button {
+      height: 34px;
+      font-weight: bold;
+      font-family: helvetica; }
+    #repo_nav li a {
+      text-decoration: none;
+      font-family: Helvetica;
+      color: #4183c4;
+      font-size: 14px;
+      margin-right: 5px; }
+    #repo_nav li a:hover {
+      text-decoration: underline; }
+
+.repo_side {
+  display: inline-block;
+  float: right;
+  margin-top: 15px; }
+  .repo_side p, .repo_side span a {
+    font-size: 11px;
+    display: inline-block;
+    color: grey;
+    margin-left: 10px;
+    font-weight: bold; }
+  .repo_side span a:hover {
+    color: #5ea5db;
+    text-decoration: none; }
+
+#events {
+  display: none; }
+
+footer {
+  border-top: 1px solid #eee;
+  margin-right: 60px;
+  margin-left: 60px;
+  padding: 25px 0px; }
+  footer ul {
+    display: inline-block; }
+  footer li {
+    display: inline-block;
+    font-size: 12px;
+    color: grey;
+    padding-left: 10px; }
+  footer a {
+    text-decoration: none;
+    color: #5ea5db;
+    font-size: 12px; }
+  footer a:hover {
+    text-decoration: underline; }
+  footer #githublink {
+    margin-left: 180px; }
+  footer span {
+    color: #bbbbbb;
+    font-size: 24; }
+  footer span:hover {
+    color: grey; }
+  footer #right {
+    float: right; }
+
+.each_Push {
+  border-top: 1px solid #eee; }
+  .each_Push span {
+    vertical-align: top;
+    margin-top: 25px; }
+  .each_Push .push_class {
+    display: inline-block;
+    margin: 15px 10px; }
+    .each_Push .push_class .push_class:first-child {
+      font-weight: normal; }
+    .each_Push .push_class img {
+      margin-left: 5px; }
+    .each_Push .push_class #date {
+      font-size: 10px;
+      color: grey; }
+    .each_Push .push_class p {
+      font-family: helvetica;
+      margin: 5px;
+      font-weight: bold; }
+      .each_Push .push_class p a {
+        color: #4183c4;
+        text-decoration: none; }
+      .each_Push .push_class p a:hover {
+        text-decoration: underline; }
+    .each_Push .push_class ul {
+      display: inline-block;
+      margin: 0px;
+      padding: 0px;
+      vertical-align: top; }
+      .each_Push .push_class ul li {
+        display: inline-block; }
+        .each_Push .push_class ul li img {
+          border-radius: 3px; }
+        .each_Push .push_class ul li a {
+          text-decoration: none;
+          color: #4183c4;
+          vertical-align: top; }
+        .each_Push .push_class ul li a:hover {
+          text-decoration: underline; }
+      .each_Push .push_class ul li:nth-child(3) {
+        color: grey;
+        font-size: 13px;
+        font-weight: lighter; }
+
+.repo_event {
+  border-top: 1px solid #eee; }
+  .repo_event p {
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 13px;
+    color: grey; }
+  .repo_event span {
+    margin-left: 11px; }
+  .repo_event a {
+    text-decoration: none;
+    color: #4183c4; }
+  .repo_event a:hover {
+    text-decoration: underline; }

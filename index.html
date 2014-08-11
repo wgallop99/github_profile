@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="octicons 2/octicons.css">
+</head>
+<body>
+
+  <header>
+    <div class="header_cont">
+      <a id="one" href="#"><span class="mega-octicon octicon-mark-github"></span></a>
+      <a id="two" href="#"><span class="octicon octicon-primitive-dot two"></span></a>
+      <input type="search" placeholder="Search or type a command">
+      <ul class="left_nav">
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Gist</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+
+      <ul class="right_nav">
+        <li><a href="#"><img src="https://avatars1.githubusercontent.com/u/7799207?v=2&s=60" alt="#"></a></li>
+        <li><a href="#">wgallop99</a></li>
+        <li><a href="#"><span class="octicon octicon-plus"></span></a></li>
+        <li><a href="#"><a href="#"><span class="octicon octicon-tools"></span></a></li>
+        <li><a href="#"><span class="octicon octicon-sign-out"></span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <script type="text/template" id="profile_template">
+  <% _.each(prof_data, function(element, index, list){ %>
+    <a href="<%= element.avatar_url %>"><img id="prof_pic" src="<%= element.avatar_url %>"></a>
+    <h1><%= element.name %></h1>
+    <h3><%= element.login %></h3>
+
+    <div class="icons">
+      <div class="space">
+        <div class="octicon octicon-organization"></div>
+        <div class="octicon octicon-location"></div>
+        <div class="octicon octicon-mail"></div>
+        <div class="octicon octicon-clock"></div>
+      </div>
+    <ul class="prof_info">
+      <li><%= element.company %></li>
+      <li><%= element.location %></li>
+      <li><a href="mailto:<%= element.email %>"><%= element.email %></a></li>
+      <li><%= element.created_at %></li>
+    </ul>
+
+    </div>
+
+    <div class="prof_box">
+      <ul class="prof_info2">
+        <li><a href="<%= element.followers_url %>"><%= element.followers %><p>Followers</p></a></li>
+        <li><a href="<%= element.starred_url %>"><%= element.public_gists %><p>Starred</p></a></li>
+        <li><a href="<%= element.following_url %>"><%= element.following %><p>Following</p></a></li>
+      </ul>
+    </div>
+
+    <div class="org_container">
+      <h4 style="margin-bottom: 12px;">Organizations</h4>
+      <a href="<%= element.organizations_url %>"><img style="width:36px" src="https://avatars3.githubusercontent.com/u/6654531?v=2&s=72"></a>
+      <a href="<%= element.organizations_url %>"><img style="width:36px" src="https://avatars1.githubusercontent.com/u/8192925?v=2&s=72"></a>
+    </div>
+  <%  }); %>
+  </script>
+  <script type="text/template" id="repo_template">
+    <% _.each(repo_data, function(element, index, list){ %>
+      <div class="eachRepo">
+        <span class="mega-octicon octicon-repo"></span>
+        <ul id="repo_list">
+          <li><h2><a href="<%= element.html_url %>"><%= element.name %></a></h2></li>
+          <li><%= element.description %></li>
+          <li><%= element.updated_at %></li>
+        </ul>
+        <div class="repo_side">
+          <p><%= element.language %></p>
+          <span><a class="octicon octicon-star" href="<%= element.stargazers_url %>"><%= element.stargazers_count %></a></span>
+          <span><a class="octicon octicon-git-branch" href="<%= element.forks_url %>"><%= element.forks_count %></a></span>
+        </div>
+      </div>
+
+    <% }); %>
+  </script>
+
+  <script type="text/template" id="activity_template">
+  <% _.each(activity_data, function(element, index, list){ %>
+    <% if (element.type === "PushEvent") { %>
+      <div class="each_Push">
+        <span class="mega-octicon octicon-git-commit"></span>
+        <div class="push_class">
+          <p id="date"><%= element.created_at %></p>
+          <p><a href="<%= element.url %>"><%= element.login %></a> pushed to <a href="<%= element.payload.url%>">master</a> at <a href="<%= element.repo.url %>"><%= element.repo.name %></a></p>
+          <img style="width: 30px;" id="small_pic" src="<%= element.actor.avatar_url %>">
+          <ul>
+            <li><img style="width: 16px;" id="smaller_pic" src="<%= element.actor.avatar_url %>"></li>
+            <li><a href="<%= element.payload.commits.url %>"><%=element.payload.head.substr(0,7)%></a></li>
+            <li><p><%=element.payload.commits[0].message%></p></li>
+          </ul>
+        </div>
+      </div>
+    <% } else if(element.type === "CreateEvent") { %>
+      <% if (element.payload.ref_type === "repository") %>
+      <div class="repo_event">
+        <span class="octicon octicon-git-branch"></span>
+        <p><a href="<%= element.url %>"><%= element.actor.login %></a> created repository <a href=""><%= element.repo.name %></a> <%= element.created_at %></p>
+
+      </div>
+      <% } else if (element.payload.ref_type === "branch") { %>
+
+
+    <%  } %>
+
+  <% }); %>
+
+  </script>
+
+  <div class="container">
+    <div class="profile_container">
+
+    </div>
+
+    <div class="main_container">
+      <nav>
+        <ul>
+          <li id="tab1"><a href="#"><span class="octicon octicon-diff-added"></span>Contributions</a></li>
+          <li id="tab2"><a href="#"><span class="octicon octicon-repo"></span>Repositories</a></li>
+          <li id="tab3"><a href="#"><span class="octicon octicon-rss"></span>Public Activity</a></li>
+        </ul>
+      </nav>
+      <div class="tab_content">
+
+        <div id="contributions">
+
+        </div>
+
+        <div id="repos">
+          <ul id="repo_nav">
+            <li><input type="search" placeholder="Find a repository..."></li>
+            <li><button>Search</button></li>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Public</a></li>
+            <li><a href="#">Private</a></li>
+            <li><a href="#">Sources</a></li>
+            <li><a href="#">Forks</a></li>
+            <li><a href="#">Mirrors</a></li>
+            <li><button><span class="octicon octicon-repo"></span>New</button></a></li>
+          </ul>
+
+
+        </div>
+
+        <div id="events">
+          <span class="octicon octicon-rss"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <ul>
+      <li>2014 GitHub, Inc.</li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Security</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <a id="githublink" href="#"><span class="mega-octicon octicon-mark-github" title="GitHub"></span></a>
+
+    <ul id="right">
+      <li><a href="#">Status</a></li>
+      <li><a href="#">API</a></li>
+      <li><a href="#">Training</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="">Blog</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+
+  </footer>
+
+
+
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="node_modules/underscore/underscore.js"></script>
+<!-- <script type="text/javascript" src="template.js"></script> -->
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
